@@ -1,5 +1,7 @@
 package com.iridium;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -13,6 +15,8 @@ public class Main {
             for(int j=0;j<3;j++){
                 a[j]=scanner.nextInt();
             }
+            Arrays.sort(a);
+            /*
             if(a[0]>a[1]){
                 mid=a[0];
                 n=0;
@@ -22,8 +26,8 @@ public class Main {
             }
             if(mid>a[2]){
                 mid=Math.max(a[1-n],a[2]);
-            }
-            System.out.println("Case "+i+": "+mid);
+            }*/
+            System.out.println("Case "+i+": "+a[1]);
             i++;
         }
     }
