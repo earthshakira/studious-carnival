@@ -1,19 +1,22 @@
 package com.iridium;
 
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
         Scanner scanner= new Scanner(System.in);
+        StringBuilder op=new StringBuilder();
         int t,c,s,f,diff;
         boolean gap;
         t=scanner.nextInt();
         while (t--> 0){
             c=scanner.nextInt();
             if(c==0){
-                System.out.println("yes");
+                op.append("yes\n");
+                if(t>0)op.append("\n");
                 continue;
             }
             gap=false;
@@ -26,9 +29,10 @@ public class Main {
                 if(diff!=(s-f))
                     gap=true;
             }
-            System.out.println(((gap)?"no":"yes"));
+            op.append(((gap)?"no\n":"yes\n"));
+            if(t>0)op.append("\n");
         }
-
+        System.out.print(op.toString());
     }
 }
 /*
