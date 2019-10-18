@@ -22,13 +22,11 @@ int main(){
 			d[i] = p[i] - q[i];
 			sum += d[i];
 		}
-		for(int i = n-2;i>=0;i--){
-			d[i]+=d[i+1];
-		for(int xx:d)
-			cout << xx << " ";
-		if(sum >= 0){
-
+		if(sum < 0){
+			cout << "Case "<< t << ":" << ans << endl;
+			continue;
 		}
+		
 		cout << "Case "<< t << ":" << ans << endl;
 	}
 	return 0;
