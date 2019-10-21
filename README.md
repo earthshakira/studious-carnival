@@ -6,7 +6,7 @@ I'm a student who wants to improve his programming skills for this I'm solving t
 
 ## Currently I've resumed it and I'm working on the following tasks
 
- ## (2D Array Manipulation)[https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=624]
+ ## [2D Array Manipulation](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=624)
  
  - [ ] 101 - Blocks Problem
  - [ ] 434 - Matty's Blocks
